@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@900&family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@900&family=Inter:wght@300;400;5der00;600;700&family=Source+Code+Pro:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap");
 :root {
   --branco: #fff;
   --preto: #000;
@@ -25,9 +25,6 @@
 }
 body {
   height: auto;
-  background-image: radial-gradient(farthest-corner at 0px 0px, var(--preto) 10%, var(--azul) 100%);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
   overflow-x: hidden;
 }
 html::-webkit-scrollbar {
@@ -40,384 +37,26 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: blue;
 }
-#titulomodali {
-  width: 100%;
-  font-size: 50px;
-  text-align: center;
-  margin-top: 10%;
-  margin-bottom: 5%;
-  color: var(--branco);
-}
-.modali {
-  width: 70%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 6%;
-  padding: 1.5%;background-color: var(--preto);
-  box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.1);
-}
-.modali img {
-  width: 30%;
-  height:  fit-content;
-}
-.textomol {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 60%;
-  padding: 1%;
-}
-.textomol h1 {
-  text-align: center;
-  width: 100%;
-  margin-bottom: 2.5%;
-}
-h2{
-  width: 100%;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  margin-bottom: 2.5%;
-  text-align: center;
-  padding: 1%;
-  border-bottom: solid 2px;
-}
-.textomol p {
-  width: 100%;
-  margin-bottom: 2.5%;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-}
-.textomol button {
-  width: 50%;
-  padding: 2.5%;
-  display: flex;
-  margin-top: 2.5%;
-  font-size: 20px;
-  background-color:var(--branco);
-  border: none;
-  color: var(--preto);
-  border-radius: 10px;
-  place-content: center;
-  transition: all 0.2s linear 0s;
-  box-shadow: rgb(0, 0, 0) 1px 1px 5px;
-  cursor: pointer;
-}
-.textomol button:hover {
-  background-color: var(--preto);
-  color: var(--branco);
-  box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.445);
-}
-
-.pagina-flutuante {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  color: var(--branco);
-  z-index: 20;
-}
-
-.conteudo-flutuante {
-  background-color: var(--preto);
-  box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 5px;
-  border: 5px black solid;
-  text-align: center;
-  max-height: 80%;
-  width: 80%;
-  margin-top: 55px;
-  overflow: scroll;
-  overflow-x: hidden;
-}
-
-.conteudo-flutuante::-webkit-scrollbar {
-  overflow-y: hidden;
-}
-
-.conteudo-flutuante a {
-  text-decoration: none;
-  color: var(--branco);
-}
-
-.conteudo-flutuante button {
-  margin-top: 20px;
-  font-size: 35px;
-  width: auto;
-  height: auto;
-  padding: 10px;
-  border-radius: 0;
-  border: 0;
-  cursor: pointer;
-  display: inline;
-}
-
-.salas {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-#titulocomissao {
-  width: 100%;
-  text-align: center;
-  margin-top: 4%;
-  margin-bottom: 5%;
-  color: var(--branco)
-}
-
-.comissao {
-  display: flex;
-  width: 250px;
-  height: 400px;
-  margin-bottom: 5%;
-  padding-top: 1%;
-  justify-content: center;
-  flex-flow: column wrap;
-  align-items: flex-start;
-  background-color: var(--preto);
-  box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.281);
-  margin: 30px 20px;
-}
-.comissao:hover{
-  box-shadow: 0px 0px 15px 15px rgba(255, 255, 255, 0.445);
-}
-
-.tcomissao {
-  width: 70%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  margin-left: 15%;
-  text-align: center;
-  color: var(--branco);
-  border-bottom: var(--branco) 2px solid;
-}
-.participantes {
-  width: 100%;
-  text-align: center;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
-  font-size: 20px;
-  color: var(--branco);
-}
-
 /*Media 480px*/
 @media (max-width: 480px) {
-  #titulomodali {
-    font-size: 30px;
-    margin-top: 40%;
-    margin-bottom: 30%;
-    color: rgb(255, 255, 255);
-  }
-  .modali {
-    width: 90%;
-    margin-bottom: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .modali img {
-    width: 70%;
-    margin-right: 0;
-  }
-  .textomol {
-    width: 90%;
-    margin-top: 5%;
-  }
-  .textomol h1 {
-    font-size: 40px;
-  }
-  .textomol p {
-    font-size: 20px;
-  }
-  .textomol button {
-    width: 90%;
-    font-size: 25px;
-  }
 
-  .conteudo-flutuante {
-    background-color: var(--preto);
-    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    width: 90vw;
   }
-
-  #titulocomissao {
-    margin-top: 30%;
-    font-size: 20px;
-    margin-bottom: 20%;
-  }
-  .comissao {
-    width: 90%;
-    height: 300px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 25%;
-  }
-  .tcomissao {
-    font-size: 23px;
-  }
-  .participantes {
-    font-size: 21px;
-  }
-}
-
+  
 /*Media 481px a 768px*/
 @media (min-width: 481px) and (max-width: 768px) {
-  #titulomodali {
-    margin-top: 35%;
-    margin-bottom: 25%;
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-  }
-  .modali {
-    width: 90%;
-    margin-bottom: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .modali img {
-    width: 50%;
-    margin-right: 0;
-  }
-  .textomol {
-    width: 90%;
-    margin-top: 5%;
-  }
-  .textomol h1 {
-    font-size: 40px;
-  }
-  .textomol p {
-    font-size: 30px;
-  }
-  .textomol button {
-    width: 90%;
-    font-size: 30px;
-  }
-
-  .conteudo-flutuante {
-    background-color: var(--preto);
-    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    width: 90vw;
-  }
-
-  #titulocomissao {
-    margin-top: 30%;
-    font-size: 25px;
-    margin-bottom: 20%;
-  }
-  .comissao {
-    width: 90%;
-    height: 480px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 25%;
-  }
-  .tcomissao {
-    font-size: 35px;
-  }
-  .participantes {
-    font-size: 28px;
-  }
+  
 }
 
 /*Media 769px a 1024px*/
 @media (min-width: 769px) and (max-width: 1024px) {
-  #titulomodali {
-    margin-top: 35%;
-    margin-bottom: 25%;
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-  }
-  .modali {
-    width: 90%;
-    margin-bottom: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .modali img {
-    width: 50%;
-    margin-right: 0;
-  }
-  .textomol {
-    width: 90%;
-    margin-top: 5%;
-  }
-  .textomol h1 {
-    font-size: 40px;
-  }
-  .textomol p {
-    font-size: 25px;
-  }
-  .textomol button {
-    width: 50%;
-    font-size: 25px;
-  }
-
-  #titulocomissao {
-    margin-top: 30%;
-    font-size: 50px;
-    margin-bottom: 20%;
-  }
-  .comissao {
-    width: 90%;
-    height: 450px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 25%;
-  }
-  .tcomissao {
-    font-size: 40px;
-  }
-  .participantes {
-    font-size: 30px;
-  }
+  
 }
 
 /*Media 1025px a 1200px*/
 @media (min-width: 1025px) and (max-width: 1200px) {
-  .textomol h1 {
-    font-size: 35px;
-  }
-  .textomol p {
-    font-size: 20px;
-  }
-  .textomol button {
-    font-size: 20px;
-  }
-
-  .comissao {
-    width: 45%;
-    height: 300px;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    margin-bottom: 10%;
-  }
-  .tcomissao {
-    font-size: 23px;
-  }
-  .participantes {
-    font-size: 18px;
-  }
+  
 }
 
 .participantes {
@@ -430,7 +69,5 @@ h2{
 }
 
 @media (min-width: 1201px) and (max-width: 1600px) {
-  .sala{
-    
-  }
+  
 }
